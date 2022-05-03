@@ -1,0 +1,139 @@
+[
+    {
+        "fieldType":"dynamicdt",
+        "responsiveLayout":"stack",
+        "paginator":"true",
+        "rows":4,
+        "paginatorTemplate":"CurrentPageReport FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink RowsPerPageDropdown",
+        "rowsPerPageOptions":[4,10,20],
+        "currentPageReportTemplate":"Showing {first} to {last} of {totalRecords}",
+        "resizableColumns":"true",
+        "columnResizeMode":"expand",
+        "scrollable":"true",
+        "scrollHeight":"250px",
+        "showGridlines":"true",
+        "filterDisplay":"row",
+        "globalFilterFields":["name","category","price","inventoryStatus","rating"],
+        "selectionMode":"single",
+        "dataKey":"name",
+        "style":"width:100%;margin-top:20px;",
+        
+        "column":[
+            {
+                "field":"name",
+                "header":"Name", 
+                "sortable":"true"
+            },
+            {
+                "field":"category",
+                "header":"Category",
+                "sortable":"true"
+            },
+            {
+                "field":"price",
+                "header":"Price",
+                "sortable":"true"
+            },
+            {
+                "field":"inventoryStatus",
+                "header":"Status",
+                "sortable":"true"
+            },
+            {
+                "fieldType":"ImageCntrl",
+                "field":"image",
+                "header":"Image",
+                "sortable":"true"
+            },
+            {
+                "fieldType":"RatingCntrl",
+                "field":"rating",
+                "header":"Rating",
+                "sortable":"true"
+            }
+             
+        ],
+
+        "filter":{
+            "childern":{
+                "global":{"value":null,"matchMode": "FilterMatchMode.CONTAINS"},
+                "name": {"value": null, "matchMode": "FilterMatchMode.STARTS_WITH"},
+                "category": {"value": null, "matchMode": "FilterMatchMode.STARTS_WITH"}, 
+                "price": {"value": null, "matchMode": "FilterMatchMode.EQUALS"},
+                "inventoryStatus": {"value": null, "matchMode": "FilterMatchMode.STARTS_WITH"},
+                "image": {"value": null, "matchMode": "FilterMatchMode.STARTS_WITH"},
+                "rating": {"value": null, "matchMode": "FilterMatchMode.STARTS_WITH"}           
+            }
+        },
+
+        "data":[
+            {
+                "name":"Bamboo Watch",
+                "category":"Accessories",
+                "price":65,
+                "inventoryStatus":"INSTOCK",
+                "image":"./img/bamboo-watch.jpg",
+                "rating":2
+                
+            },
+            {
+                "name":"Black Watch",
+                "category":"Accessories",
+                "price":72,
+                "inventoryStatus":"INSTOCK",
+                "image":"./img/black-watch.jpg",
+                "rating":4
+            },
+            {
+                "name":"Blue Band",
+                "category":"Fitness",
+                "price":79,
+                "inventoryStatus":"LOWSTOCK",
+                "image":"./img/blue-band.jpg",
+                "rating":5
+            },
+            {
+                "name":"Blue T-Shirt",
+                "category":"Clothing",
+                "price":29,
+                "inventoryStatus":"OUTOFSTOCK",
+                "image":"./img/bamboo-watch.jpg",
+                "rating":3
+            },
+            {
+                "name":"Bracelet",
+                "category":"Accessories",
+                "price":66,
+                "inventoryStatus":"INSTOCK",
+                "image":"./img/bamboo-watch.jpg",
+                "rating":2
+            },
+            {
+                "name":"Brown Purse",
+                "category":"Accessories",
+                "price":72,
+                "inventoryStatus":"INSTOCK",
+                "image":"./img/bamboo-watch.jpg",
+                "rating":1
+            },
+            {
+                "name":"Chakra Bracelet",
+                "category":"Fitness",
+                "price":79,
+                "inventoryStatus":"LOWSTOCK",
+                "image":"./img/bamboo-watch.jpg",
+                "rating":3
+            },
+            {
+                "name":"Galaxy Earrings",
+                "category":"Clothing",
+                "price":29,
+                "inventoryStatus":"OUTOFSTOCK",
+                "image":"./img/bamboo-watch.jpg",
+                "rating":4
+            }
+
+        ]
+    }
+    
+]
